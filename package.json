@@ -1,0 +1,19 @@
+{
+  "name": "oc_p03_ohmyfood",
+  "version": "1.0.0",
+  "description": "Formation Dev App en Js et React = Troisième projet  >> Oh My Food!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P0B0CK/OC_P03_ohMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P0B0CK/OC_P03_ohMyFood/issues"
+  },
+  "homepage": "https://github.com/P0B0CK/OC_P03_ohMyFood#readme"
+}
