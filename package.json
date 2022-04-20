@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/P0B0CK/OC_P03_ohMyFood/issues"
   },
-  "homepage": "https://github.com/P0B0CK/OC_P03_ohMyFood#readme"
+  "homepage": "https://github.com/P0B0CK/OC_P03_ohMyFood#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
