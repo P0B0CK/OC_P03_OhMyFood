@@ -9,6 +9,7 @@ h1, h3 {
 h3 {
   font-size: 52px;
   color: white;
+  padding: 50px;
 }
 
 h2 {
@@ -57,6 +58,8 @@ header {
 }
 
 #reserve {
+  padding: 100px;
+  margin-bottom: 100px;
   background-color: #f6f6f6;
 }
 
@@ -66,7 +69,6 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 100px;
 }
 .reservation p {
   color: #353535;
@@ -86,10 +88,76 @@ header {
 }
 
 #fonction {
+  padding: 50px;
+  margin-bottom: 100px;
   background-color: #ffffff;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.pannel {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.pannel .sticker {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 200px;
+  background-color: #f6f6f6;
+  border-radius: 60px;
+  box-shadow: 0 10px 50px 0 rgba(53, 53, 53, 0.3);
+}
+.pannel .sticker:hover {
+  background-color: #9356DC;
+  opacity: 0.15;
+}
+.pannel .sticker--circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: -50px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  display: flex;
+}
+.pannel .sticker--circle .sticker--nbr {
+  position: relative;
+  top: 26px;
+  left: 37px;
+  color: #ffffff;
+  margin: 0;
+}
+.pannel .sticker__icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 25px 0 -25px;
+}
+.pannel .sticker__icon .icon--stylized {
+  color: #353535;
+  opacity: 0.5;
+}
+.pannel .sticker__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pannel .sticker__text .text--sizing {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 #restaurants {
+  padding: 50px;
+  padding-bottom: 200px;
   background-color: #f6f6f6;
 }
 

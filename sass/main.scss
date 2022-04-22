@@ -11,6 +11,7 @@ h1, h3{
 h3{
     font-size: 52px;
     color: white;
+    padding: 50px;
 }
 
 h2{
@@ -61,6 +62,8 @@ header{
 
 
 #reserve{
+    padding: $padding50 + 50;
+    margin-bottom: 100px;
     background-color: $color-whitened;
 }
 
@@ -70,7 +73,6 @@ header{
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 100px;
 
     p{
         color: $color-blackened;
@@ -93,14 +95,86 @@ header{
 }
 
 #fonction{
+    padding: $padding50;
+    margin-bottom: 100px;
     background-color: $color-white;
 }
 
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+}
+
+.pannel{
+    display: flex;
+    flex-direction: column;
+    padding: $padding50;
+
+    .sticker{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 200px;
+        background-color: $color-whitened;
+        border-radius: 60px;
+        box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.3);
+        &:hover{
+            background-color: $color-primary;
+            opacity: .15;
+        }
+    }
+
+    .sticker--circle{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: -50px;
+        background-color: $color-primary;
+        border-radius: 50px;
+        display: flex;
+
+        .sticker--nbr{
+            position: relative;
+            top: 26px; left: 37px;
+            color: $color-white;
+            margin: 0;
+        }
+    }
+
+    .sticker__icon{
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 25px 0 -25px;
+
+        .icon--stylized{
+            color: $color-blackened;
+            opacity: .5;
+        }
+    }
+
+    .sticker__text{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .text--sizing{
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
 #restaurants{
+    padding: $padding50;
+    padding-bottom: 200px;
     background-color: $color-whitened;
 }
 
 footer{
-    padding: 50px;
+    padding: $padding50;
     background-color: $color-blackened;
 }
