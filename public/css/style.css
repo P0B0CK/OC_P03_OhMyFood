@@ -101,7 +101,7 @@ header {
 .pannel {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 25px;
 }
 .pannel .sticker {
   display: flex;
@@ -119,24 +119,24 @@ header {
   background-color: rgba(147, 86, 220, 0.1);
 }
 .pannel .sticker--circle {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: relative;
-  left: -50px;
+  left: -40px;
   background-color: #9356DC;
   border-radius: 50px;
   display: flex;
 }
 .pannel .sticker--circle .sticker--nbr {
   position: relative;
-  top: 26px;
-  left: 37px;
+  top: 20px;
+  left: 27px;
   color: #ffffff;
   margin: 0;
 }
 .pannel .sticker__icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;

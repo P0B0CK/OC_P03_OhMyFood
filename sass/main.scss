@@ -108,7 +108,7 @@ header{
 .pannel{
     display: flex;
     flex-direction: column;
-    padding: $padding50;
+    padding: 25px;
 
     .sticker{
         display: flex;
@@ -129,25 +129,25 @@ header{
     }
 
     .sticker--circle{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         position: relative;
-        left: -50px;
+        left: -40px;
         background-color: $color-primary;
         border-radius: 50px;
         display: flex;
 
         .sticker--nbr{
             position: relative;
-            top: 26px; left: 37px;
+            top: 20px; left: 27px;
             color: $color-white;
             margin: 0;
         }
     }
 
     .sticker__icon{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         display: flex;
         justify-content: space-around;
         align-items: center;
