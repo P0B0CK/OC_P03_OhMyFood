@@ -108,13 +108,15 @@ header {
   flex-flow: row nowrap;
   align-items: center;
   height: 200px;
-  background-color: #f6f6f6;
+  margin-bottom: 100px;
   border-radius: 60px;
   box-shadow: 0 10px 50px 0 rgba(53, 53, 53, 0.3);
 }
-.pannel .sticker:hover {
-  background-color: #9356DC;
-  opacity: 0.15;
+.pannel .sticker--backGrey {
+  background-color: #f6f6f6;
+}
+.pannel .sticker--backPurple {
+  background-color: rgba(147, 86, 220, 0.1);
 }
 .pannel .sticker--circle {
   width: 100px;
@@ -133,8 +135,8 @@ header {
   margin: 0;
 }
 .pannel .sticker__icon {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -143,6 +145,9 @@ header {
 .pannel .sticker__icon .icon--stylized {
   color: #353535;
   opacity: 0.5;
+}
+.pannel .sticker__icon .icon--stylizedPurple {
+  color: #9356DC;
 }
 .pannel .sticker__text {
   display: flex;

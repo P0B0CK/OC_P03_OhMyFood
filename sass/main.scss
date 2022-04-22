@@ -115,13 +115,17 @@ header{
         flex-flow: row nowrap;
         align-items: center;
         height: 200px;
-        background-color: $color-whitened;
+        margin-bottom: 100px;
         border-radius: 60px;
         box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.3);
-        &:hover{
-            background-color: $color-primary;
-            opacity: .15;
-        }
+    }
+
+    .sticker--backGrey{
+        background-color: $color-whitened;
+    }
+
+    .sticker--backPurple{
+        background-color: rgb($color-primary, 0.1);
     }
 
     .sticker--circle{
@@ -142,8 +146,8 @@ header{
     }
 
     .sticker__icon{
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -152,6 +156,10 @@ header{
         .icon--stylized{
             color: $color-blackened;
             opacity: .5;
+        }
+
+        .icon--stylizedPurple{
+            color: $color-primary;
         }
     }
 
