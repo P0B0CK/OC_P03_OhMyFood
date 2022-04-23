@@ -1,10 +1,10 @@
 @import "./utils/variables";
 
-body{
+body, p, h2, h3{
     font-family: 'Roboto', sans-serif, Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1, h3{
+h1{
     font-family: 'Shrikhand', cursive, Impact, Arial, Helvetica, Verdana;
 }
 
@@ -180,6 +180,43 @@ header{
     padding: $padding50;
     padding-bottom: 200px;
     background-color: $color-whitened;
+}
+
+.picture{
+    width: 100px;
+}
+
+.gal{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card{
+    width : 100%;
+    height: 600px;
+    border-radius: $border45;
+    background-color: blue;
+}
+
+.card__pic{
+    height: 400px;
+    .picture{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .picture--roundedTop{
+        border-radius: $border45 $border45 0 0;
+    }
+}
+
+.card__text{
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 footer{
