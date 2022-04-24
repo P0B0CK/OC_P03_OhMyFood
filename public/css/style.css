@@ -252,6 +252,14 @@ p.place-restaurant {
   color: rgba(53, 53, 53, 0.8);
 }
 
+.photo__profil {
+  width: 100%;
+}
+
+.name__restaurant {
+  font-size: 78px;
+}
+
 footer {
   padding: 50px;
   background-color: #353535;
