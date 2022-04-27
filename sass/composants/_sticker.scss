@@ -1,0 +1,70 @@
+.pannel{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+    .sticker{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 200px;
+        margin-bottom: 100px;
+        border-radius: 60px;
+        box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.3);
+    }
+    
+    .sticker--backGrey{
+        background-color: $color-whitened;
+    }
+    
+    .sticker--backPurple{
+        background-color: rgb($color-primary, 0.1);
+    }
+    
+    .sticker--circle{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: -40px;
+        background-color: $color-primary;
+        border-radius: 50px;
+        display: flex;
+    
+        .sticker--nbr{
+            position: relative;
+            top: 20px; left: 27px;
+            color: $color-white;
+            margin: 0;
+        }
+    }
+    
+    .sticker__icon{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 25px 0 -25px;
+    
+        .icon--stylized{
+            color: $color-blackened;
+            opacity: .5;
+        }
+    
+        .icon--stylizedPurple{
+            color: $color-primary;
+        }
+    }
+    
+    .sticker__text{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        .text--sizing{
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

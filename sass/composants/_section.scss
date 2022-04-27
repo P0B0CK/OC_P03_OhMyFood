@@ -1,0 +1,38 @@
+#fonction{
+    padding: $padding50;
+    margin-bottom: 100px;
+    background-color: $color-white;
+}
+
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurants{
+    padding: $padding50;
+    padding-bottom: 100px;
+    background-color: $color-whitened;
+}
+
+#reserve{
+    padding: $padding50;
+    margin-bottom: 100px;
+    background-color: $color-whitened;
+}
+
+.reservation{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    p{
+        color: $color-blackened;
+    }
+
+    button p{
+        color: $color-white;
+    }
+}

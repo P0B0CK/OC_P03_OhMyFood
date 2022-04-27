@@ -1,0 +1,80 @@
+.gal{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.picture{
+    width: 100px;
+}
+
+.card{
+    width : 100%;
+    height: 600px;
+    border-radius: $border45;
+    background-color: $color-white;
+    box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.2);
+    margin-bottom: 50px;
+}
+
+.new{
+    width: 230px;
+    height: 75px;
+    margin: 25px 0 0 600px;
+    border-radius: 8px;
+    background-color: $color-tertiary;
+    position: absolute;
+    p.new--font{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        color: #008d62;
+        margin: 15px 0 0 0;
+    }
+}
+
+.card__pic{
+    height: 400px;
+    .picture{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .picture--center{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .picture--roundedTop{
+        border-radius: $border45 $border45 0 0;
+    }
+}
+
+.card__text{
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .text--column{
+        width: 90%;
+        padding: 50px 0 0 30px;
+    }
+    .icn-favorite{
+        width: 10%;
+        padding: $padding50;
+        justify-content: center;
+        opacity: 0.7;
+    }
+}
+
+p.place-restaurant{
+    color: rgb($color-blackened, 0.8);
+}
+
+.photo__profil{
+    width: 100%;
+}
