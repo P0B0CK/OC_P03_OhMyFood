@@ -1,3 +1,8 @@
+#reserve{
+    padding: 100px 130px 100px;
+}
+
+
 #fonction{
     padding: $padding50;
     background-color: $color-white;
@@ -13,10 +18,7 @@
     background-color: $color-whitened;
 }
 
-#reserve{
-    padding: 100px 130px 100px;
-    background-color: $color-whitened;
-}
+
 
 .reservation{
     display: flex;

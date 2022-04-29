@@ -42,6 +42,10 @@ body {
   background-color: #eaeaea;
 }
 
+#reserve {
+  padding: 100px 130px 100px;
+}
+
 #fonction {
   padding: 50px;
   background-color: #ffffff;
@@ -54,11 +58,6 @@ body {
 
 #restaurants {
   padding: 50px;
-  background-color: #f6f6f6;
-}
-
-#reserve {
-  padding: 100px 130px 100px;
   background-color: #f6f6f6;
 }
 
@@ -107,25 +106,39 @@ input {
 button {
   border: none;
   background: transparent;
+  font-size: 40px;
   color: #ffffff;
   position: relative;
   overflow: hidden;
-  padding: 0 50px;
+  padding: 40px 50px;
+  cursor: pointer;
+  box-shadow: 10px 10px 25px 0 rgba(53, 53, 53, 0.5);
+  transition: all 0.5s;
 }
 
 .btn--gradiant::after {
   content: "";
-  width: 600px;
-  height: 600px;
-  background: linear-gradient(-190deg, #99E2D0 0%, #FF79DA 50%, #9356DC 100%);
+  width: 750px;
+  height: 750px;
+  background: linear-gradient(-180deg, #99E2D0 0%, #FF79DA 50%, #9356DC 100%);
   position: absolute;
-  top: -340px;
-  left: -50px;
-  z-index: 0;
+  top: -500px;
+  left: -80px;
+  z-index: -1;
+  transition: all 0.5s;
 }
 
 .btn--rouned {
   border-radius: 100px;
+}
+
+button:hover::after {
+  transform: rotate(180deg);
+}
+
+button:hover {
+  transform: translate(0, -10px);
+  box-shadow: 20px 20px 45px 0 rgba(53, 53, 53, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */

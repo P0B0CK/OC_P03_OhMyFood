@@ -1,22 +1,36 @@
 button{
     border: none;
     background: transparent;
+    font-size: 40px;
     color: $color-white;
     position: relative;
     overflow: hidden;
-    padding: 0 50px;
+    padding: 40px 50px;
+    cursor: pointer;
+    box-shadow: 10px 10px 25px 0 rgba($color-blackened, .5);
+    transition: all .5s;
 }
 
 .btn--gradiant::after{
     content:"";
-    width: 600px;
-    height: 600px;
-    background: linear-gradient(-190deg, $color-tertiary 0%, $color-secondary 50%, $color-primary 100%);
+    width: 750px;
+    height: 750px;
+    background: linear-gradient(-180deg, $color-tertiary 0%, $color-secondary 50%, $color-primary 100%);
     position: absolute;
-    top:-340px; left:-50px;
-    z-index: 0;
+    top:-500px; left:-80px;
+    z-index: -1;
+    transition: all .5s;
 }
 
 .btn--rouned{
     border-radius: 100px;
+}
+
+button:hover::after{
+    transform: rotate(180deg);
+}
+
+button:hover{
+    transform: translate(0, -10px);
+    box-shadow: 20px 20px 45px 0 rgba($color-blackened, .5);
 }
