@@ -44,6 +44,8 @@ body {
 
 #reserve {
   padding: 100px 130px 100px;
+  background-color: #f6f6f6;
+  z-index: -2;
 }
 
 #fonction {
@@ -137,6 +139,148 @@ button:hover::after {
 button:hover {
   transform: translate(0, -10px);
   box-shadow: 20px 20px 45px 0 rgba(53, 53, 53, 0.5);
+}
+
+.pannel {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin-top: 40px;
+}
+.pannel .sticker {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 100px;
+  border-radius: 60px;
+  box-shadow: 0 10px 50px 0 rgba(53, 53, 53, 0.3);
+}
+.pannel .sticker--backGrey {
+  background-color: #f6f6f6;
+}
+.pannel :hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.pannel .sticker--circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: -40px;
+  background-color: #9356DC;
+  border-radius: 50px;
+  display: flex;
+}
+.pannel .sticker--circle .sticker--nbr {
+  position: relative;
+  top: 20px;
+  left: 27px;
+  color: #ffffff;
+  margin: 0;
+}
+.pannel .sticker__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 25px 0 -25px;
+}
+.pannel .sticker__icon .icon--stylized {
+  color: #353535;
+  opacity: 0.5;
+}
+.pannel .sticker__icon .icon--stylizedPurple {
+  color: #9356DC;
+}
+.pannel .sticker__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pannel .sticker__text .text--sizing {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gal {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.picture {
+  width: 100px;
+}
+
+.card {
+  width: 100%;
+  height: 600px;
+  border-radius: 45px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 50px 0 rgba(53, 53, 53, 0.2);
+  margin-bottom: 50px;
+}
+
+.new {
+  width: 230px;
+  height: 75px;
+  margin: 25px 0 0 600px;
+  border-radius: 8px;
+  background-color: #99E2D0;
+  position: absolute;
+}
+.new p.new--font {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #008d62;
+  margin: 15px 0 0 0;
+}
+
+.card__pic {
+  height: 400px;
+}
+.card__pic .picture {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.card__pic .picture--center {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.card__pic .picture--roundedTop {
+  border-radius: 45px 45px 0 0;
+}
+
+.card__text {
+  height: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.card__text .text--column {
+  width: 90%;
+  padding: 50px 0 0 30px;
+}
+.card__text .icn-favorite {
+  width: 10%;
+  padding: 50px;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+p.place-restaurant {
+  color: rgba(53, 53, 53, 0.8);
+}
+
+.photo__profil {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

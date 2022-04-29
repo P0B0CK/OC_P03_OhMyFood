@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
+    margin-top: 40px;
     
     .sticker{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        height: 60px;
+        height: 200px;
         margin-bottom: 100px;
         border-radius: 60px;
         box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.3);
@@ -17,7 +18,7 @@
         background-color: $color-whitened;
     }
     
-    .sticker--backPurple{
+    :hover{
         background-color: rgb($color-primary, 0.1);
     }
     
