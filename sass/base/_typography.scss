@@ -1,40 +1,28 @@
-body, p, h2, h4{
+body, p{
     font-family: 'Roboto', sans-serif, Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1, h3{
+.logo{
     font-family: 'Shrikhand', cursive, Impact, Arial, Helvetica, Verdana;
 }
 
-h2{
-    font-weight: bold;
-    margin-bottom: 50px;
-}
-
-h4{
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-h3{
+.logoWhite{
+    font-family: 'Shrikhand', cursive, Impact, Arial, Helvetica, Verdana;
     color: $color-white;
 }
 
+h1{
+    font-family: 'Shrikhand', cursive, Impact, Arial, Helvetica, Verdana;
+    color: $color-white;
+}
+
+h2{
+    font-size: 60px;
+    color: $color-blackened;
+    margin: 0;
+}
+
 p{
-    margin-bottom: 50px;
-}
-
-ul{
-    margin: 25px 0;
-    color: white;
-}
-
-a{
-    text-decoration: none;
-    color: $color-black;
-}
-
-ul li a{
-    color: white;
-    text-decoration: none;
+    font-size: 40px;
+    color: $color-blackened;
 }

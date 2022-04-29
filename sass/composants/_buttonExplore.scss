@@ -1,7 +1,20 @@
-.btn__explore{
-    background-color: $color-primary;
-    border-radius: 25px $color-primary;
-    width: 75%;
+button{
+    border: none;
+    background: transparent;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+    padding: 0 50px;
+}
+
+.btn--gradiant::after{
+    content:"";
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(-190deg, $color-tertiary 0%, $color-secondary 50%, $color-primary 100%);
+    position: absolute;
+    top:-340px; left:-50px;
+    z-index: 0;
 }
 
 .btn--rouned{

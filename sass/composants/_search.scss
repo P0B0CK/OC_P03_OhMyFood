@@ -1,7 +1,15 @@
-#search{
-    padding: 0;
+input{
+    width: 40%;
     height: 100px;
-    background-color: $color-smoked;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    }
+
+#search{
 
     .search__place{
         width: 100%;

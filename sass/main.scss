@@ -5,10 +5,8 @@
 
 @import "./layout/header";
 
+@import "./layout/body";
 @import "./composants/section";
-@import "./composants/buttonExplore";
-@import "./composants/sticker";
 @import "./composants/search";
-@import "./composants/card";
-
-@import "./layout/footer";
+@import "./composants/iconStyles";
+@import "./composants/buttonExplore";
