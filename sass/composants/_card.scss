@@ -59,9 +59,13 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    line-height: 60px;
     .text--column{
         width: 90%;
-        padding: 50px 0 0 30px;
+        padding: 30px;
+        h4{
+            margin: 0;
+        }
     }
     .icn-favorite{
         width: 10%;
@@ -72,6 +76,7 @@
 }
 
 p.place-restaurant{
+    margin: 0;
     color: rgb($color-blackened, 0.8);
 }
 
