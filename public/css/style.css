@@ -44,13 +44,15 @@ body {
 
 #reserve {
   padding: 100px 130px 100px;
-  background-color: #f6f6f6;
-  z-index: -2;
 }
 
-#fonction {
+.box--offset {
   padding: 50px;
   background-color: #ffffff;
+}
+.box--offset h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .fonctionnement {
@@ -59,7 +61,6 @@ body {
 }
 
 #restaurants {
-  padding: 50px;
   background-color: #f6f6f6;
 }
 
@@ -103,7 +104,7 @@ form {
   margin-right: 15px;
 }
 
-button {
+.btn--gradiant {
   border: none;
   background: transparent;
   font-size: 40px;
@@ -120,9 +121,9 @@ button {
   content: "";
   width: 750px;
   height: 750px;
-  background: linear-gradient(-180deg, #99E2D0 0%, #FF79DA 50%, #9356DC 100%);
+  background: linear-gradient(-180deg, #00febe 0%, #FF79DA 50%, #9356DC 100%);
   position: absolute;
-  top: -500px;
+  top: -475px;
   left: -80px;
   z-index: -1;
   transition: all 0.5s;
@@ -145,7 +146,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 25px;
-  margin-top: 40px;
 }
 .pannel .sticker {
   display: flex;
@@ -159,8 +159,13 @@ button:hover {
 .pannel .sticker--backGrey {
   background-color: #f6f6f6;
 }
-.pannel :hover {
+.pannel .sticker:hover {
   background-color: rgba(147, 86, 220, 0.1);
+  color: #9356DC;
+}
+.pannel .sticker:hover .icon--stylized {
+  color: #9356DC;
+  opacity: 1;
 }
 .pannel .sticker--circle {
   width: 80px;
@@ -184,14 +189,12 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 25px 0 -25px;
+  margin: 0 50px 0 20px;
+  color: #9356DC;
 }
 .pannel .sticker__icon .icon--stylized {
   color: #353535;
   opacity: 0.5;
-}
-.pannel .sticker__icon .icon--stylizedPurple {
-  color: #9356DC;
 }
 .pannel .sticker__text {
   display: flex;
@@ -281,6 +284,33 @@ p.place-restaurant {
 
 .photo__profil {
   width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  padding: 50px;
+  background-color: #353535;
+}
+footer h3 {
+  font-size: 56px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  line-height: 70px;
+}
+footer a i {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

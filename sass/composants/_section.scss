@@ -1,13 +1,14 @@
 #reserve{
     padding: 100px 130px 100px;
-    background-color: $color-whitened;
-    z-index: -2;
 }
 
-
-#fonction{
+.box--offset{
     padding: $padding50;
     background-color: $color-white;
+    h2{
+        padding-top: $padding50;
+        padding-bottom: $padding50;
+    }
 }
 
 .fonctionnement{
@@ -16,7 +17,6 @@
 }
 
 #restaurants{
-    padding: $padding50;
     background-color: $color-whitened;
 }
 
