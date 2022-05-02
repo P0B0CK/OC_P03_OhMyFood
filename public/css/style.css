@@ -94,6 +94,7 @@ body {
 
 #reserve {
   padding: 100px 130px 100px;
+  background-color: #F6F6F6;
 }
 
 .box--offset {
@@ -176,6 +177,11 @@ form {
   align-items: center;
 }
 
+#search {
+  box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.4);
+  background-color: #E9E9E9;
+}
+
 .icon--style {
   color: #353535;
 }
@@ -186,7 +192,7 @@ form {
 
 .btn--gradiant {
   border: none;
-  background: transparent;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 85%);
   font-size: 40px;
   color: #ffffff;
   position: relative;
@@ -242,6 +248,7 @@ button:hover {
 .pannel .sticker:hover {
   background-color: rgba(147, 86, 220, 0.1);
   color: #9356DC;
+  cursor: pointer;
 }
 .pannel .sticker:hover .icon--stylized {
   color: #9356DC;
@@ -305,14 +312,18 @@ button:hover {
   box-shadow: 0 10px 50px 0 rgba(53, 53, 53, 0.2);
   margin-bottom: 50px;
 }
+.card:hover {
+  transform: scale(1.1);
+}
 
 .new {
   width: 230px;
   height: 75px;
-  margin: 25px 0 0 600px;
   border-radius: 8px;
   background-color: #99E2D0;
   position: absolute;
+  top: 30px;
+  right: 30px;
 }
 .new p.new--font {
   display: flex;
@@ -324,6 +335,7 @@ button:hover {
 
 .card__pic {
   height: 400px;
+  position: relative;
 }
 .card__pic .picture {
   width: 100%;
@@ -427,6 +439,9 @@ footer a {
 footer a i {
   width: 50px;
   height: 50px;
+}
+footer a:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

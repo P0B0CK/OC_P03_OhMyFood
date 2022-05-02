@@ -18,6 +18,7 @@
     .sticker:hover{
         background-color: rgb($color-primary, 0.1);
         color: $color-primary;
+        cursor: pointer;
         .icon--stylized{
             color: $color-primary;
             opacity: 1;
