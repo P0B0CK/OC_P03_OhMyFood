@@ -1,0 +1,11 @@
+.fav-heart--color{
+    color: rgba($color-blackened, .8);
+}
+
+.fav-heart--background{
+    background-color: radial-gradient($color-secondary, $color-primary);
+    transition: all 4s;
+    &:hover{
+        background-color: radial-gradient($color-secondary, $color-primary);
+    }
+}
