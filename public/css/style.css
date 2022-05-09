@@ -517,7 +517,6 @@ p.place-restaurant {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-
 .plate__txt {
   overflow: hidden;
 }
@@ -531,10 +530,12 @@ p.place-restaurant {
   from {
     opacity: 0;
     visibility: hidden;
+    transform: translateX(10px);
   }
   to {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0px);
   }
 }
 .fav-heart--color {
