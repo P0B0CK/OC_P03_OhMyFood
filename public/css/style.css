@@ -70,6 +70,12 @@ a {
   border-bottom: 8px solid #99E2D0;
 }
 
+.loader-typo {
+  font-family: "Shrikhand", cursive, Impact, Arial, Helvetica, Verdana;
+  color: white;
+  font-size: 72px;
+}
+
 header {
   width: 100%;
   height: 120px;
@@ -104,36 +110,26 @@ body {
   justify-content: center;
   background-color: #353535;
   z-index: 1;
-  opacity: 0;
-  animation: fadeout 2.75s 0s 1;
+  visibility: hidden;
+  animation: fadeout 3s 0s 1;
 }
 @keyframes fadeout {
-  from {
+  0% {
     opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.loader--hide {
-  animation-name: hidden;
-  animation-delay: 2.75s;
-  animation-timing-function: ease-in;
-}
-@keyframes hidden {
-  from {
     visibility: visible;
   }
-  to {
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
     visibility: hidden;
   }
-}
-
-.loader-typo {
-  font-family: "Shrikhand", cursive, Impact, Arial, Helvetica, Verdana;
-  color: white;
-  font-size: 72px;
 }
 
 .lds-ellipsis {
