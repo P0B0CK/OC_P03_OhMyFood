@@ -22,6 +22,21 @@
   }
 }
 
+.loader--hide{
+  animation-name: hidden;
+  animation-delay: 2.75s;
+  animation-timing-function: ease-in;
+
+  @keyframes hidden {
+    from{
+      visibility: visible;
+    }
+    to{
+      visibility: hidden;
+    }
+  }
+}
+
 .loader-typo{
   font-family: 'Shrikhand', cursive, Impact, Arial, Helvetica, Verdana;
   color:white;
