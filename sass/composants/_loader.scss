@@ -10,7 +10,7 @@
   background-color: $color-blackened;
   z-index: 1;
   visibility: hidden;
-  animation: fadeout  3s 0s 1;
+  animation: fadeout  3s 0s forwards;
 
   @keyframes fadeout {
     0% {

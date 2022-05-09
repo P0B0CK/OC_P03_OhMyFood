@@ -111,7 +111,7 @@ body {
   background-color: #353535;
   z-index: 1;
   visibility: hidden;
-  animation: fadeout 3s 0s 1;
+  animation: fadeout 3s 0s forwards;
 }
 @keyframes fadeout {
   0% {
@@ -486,6 +486,19 @@ p.place-restaurant {
 .menu-pannel {
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+}
+.menu-pannel :nth-child(1) {
+  animation: unfold 3s 1s forwards;
+}
+.menu-pannel :nth-child(2) {
+  animation: unfold 3s 1.3s forwards;
+}
+.menu-pannel :nth-child(3) {
+  animation: unfold 3s 1.6s forwards;
+}
+.menu-pannel :nth-child(4) {
+  animation: unfold 3s 1.9s forwards;
 }
 
 .plate {
@@ -514,6 +527,16 @@ p.place-restaurant {
   margin-right: 40px;
 }
 
+@keyframes unfold {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .fav-heart--color {
   color: rgba(53, 53, 53, 0.8);
 }
