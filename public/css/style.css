@@ -557,8 +557,17 @@ p.place-restaurant {
   left: 0;
 }
 
+.fav-heart--black {
+  color: #353535;
+}
+
 .fav-heart--color {
-  color: red;
+  background-color: black;
+  background-image: radial-gradient(#FF79DA 0%, #9356DC 85%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 /*.fav-heart--background{

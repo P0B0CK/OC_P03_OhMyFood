@@ -9,15 +9,27 @@
     transition: all 2s;
     font-size: 3px;
     &:hover{
-
         font-size: 64px;
         opacity: 1;
         top: 0; left: 0;
     }
 }
 
+.fav-heart--black{
+    color: rgba($color-blackened, 1);
+}
+
 .fav-heart--color{
-    color: rgba(red, 1);
+    background-color: black;
+    background-image: radial-gradient( 
+        #FF79DA 0%,
+        #9356DC 85%
+        );
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 /*.fav-heart--background{
