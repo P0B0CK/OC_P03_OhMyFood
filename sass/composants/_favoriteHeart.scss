@@ -1,11 +1,29 @@
-.fav-heart--color{
-    color: rgba($color-blackened, .8);
+.heart-container{
+    position: relative;
 }
 
-.fav-heart--background{
+.heart-animated{
+    position: absolute;
+    top: 50%; left: 50%;
+    opacity: 0;
+    transition: all 2s;
+    font-size: 3px;
+    &:hover{
+
+        font-size: 64px;
+        opacity: 1;
+        top: 0; left: 0;
+    }
+}
+
+.fav-heart--color{
+    color: rgba(red, 1);
+}
+
+/*.fav-heart--background{
     background-color: radial-gradient($color-secondary, $color-primary);
     transition: all 4s;
     &:hover{
         background-color: radial-gradient($color-secondary, $color-primary);
     }
-}
+}*/
