@@ -540,6 +540,7 @@ p.place-restaurant {
 }
 .heart-container {
   position: relative;
+  cursor: pointer;
 }
 
 .heart-animated {
@@ -562,7 +563,7 @@ p.place-restaurant {
 }
 
 .fav-heart--color {
-  background-color: black;
+  background-color: white;
   background-image: radial-gradient(#FF79DA 0%, #9356DC 85%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -570,13 +571,6 @@ p.place-restaurant {
   -moz-text-fill-color: transparent;
 }
 
-/*.fav-heart--background{
-    background-color: radial-gradient($color-secondary, $color-primary);
-    transition: all 4s;
-    &:hover{
-        background-color: radial-gradient($color-secondary, $color-primary);
-    }
-}*/
 footer {
   display: flex;
   flex-flow: column nowrap;
