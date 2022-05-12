@@ -529,14 +529,15 @@ p.place-restaurant {
   color: transparent;
 }
 .plate:hover .plate__valid {
-  visibility: visible;
-  width: 25%;
+  width: 20%;
   border-radius: 0 60px 60px 0;
   margin: -25px;
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  animation: scrollLeft 0.8s forwards;
 }
 .plate:hover .plate__valid > i {
   color: white;
@@ -558,6 +559,16 @@ p.place-restaurant {
     opacity: 1;
     visibility: visible;
     transform: translateX(0px);
+  }
+}
+@keyframes scrollLeft {
+  from {
+    width: 0%;
+    transform: translateX(20%);
+  }
+  to {
+    width: 25%;
+    transform: translateX(0);
   }
 }
 @keyframes rolling {
