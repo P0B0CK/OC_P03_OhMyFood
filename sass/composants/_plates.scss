@@ -32,14 +32,23 @@
         flex-flow: row nowrap;
         justify-content: space-between;
     }
-
-    &:active{
-        
-    }
 }
 
 .plate__txt{
+    width: auto;
     overflow: hidden;
+}
+
+.plate__price{
+    width: 20%;
+}
+
+.plate__valid{
+    width: 0%;
+    background-color: rgba($color-tertiary, 1);
+    &:hover{
+        width: 20%;
+    }
 }
 
 .price--align{
@@ -58,4 +67,8 @@
         visibility: visible;
         transform: translateX(0px);
     }
+}
+
+@keyframes rolling{
+
 }

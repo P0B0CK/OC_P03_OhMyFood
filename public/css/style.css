@@ -517,8 +517,22 @@ p.place-restaurant {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
 .plate__txt {
+  width: auto;
   overflow: hidden;
+}
+
+.plate__price {
+  width: 20%;
+}
+
+.plate__valid {
+  width: 0%;
+  background-color: #99e2d0;
+}
+.plate__valid:hover {
+  width: 20%;
 }
 
 .price--align {
@@ -538,6 +552,7 @@ p.place-restaurant {
     transform: translateX(0px);
   }
 }
+@keyframes rolling {}
 .heart-container {
   position: relative;
   cursor: pointer;
