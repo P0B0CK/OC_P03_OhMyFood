@@ -18,6 +18,7 @@
 
 .plate{
     display: flex;
+    justify-content: space-between;
     height: 150px;
     padding: 25px;
     margin-bottom: 50px;
@@ -25,35 +26,48 @@
     background-color: white;
     box-shadow: 0 5px 25px 0 rgb($color-blackened, 0.2);
     cursor: pointer;
-    
     .plate-details{
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        .plate__txt{
+             width: auto;
+        overflow: hidden;
+        }
+        .plate__price{
+            width: 20%;
+        }
     }
-}
-
-.plate__txt{
-    width: auto;
-    overflow: hidden;
-}
-
-.plate__price{
-    width: 20%;
-}
-
-.plate__valid{
-    width: 0%;
-    background-color: rgba($color-tertiary, 1);
+    .plate__valid i{
+        color: transparent;
+    }
     &:hover{
-        width: 20%;
+        .plate__valid{
+            visibility: visible;
+            width: 25%;
+            border-radius: 0 60px 60px 0;
+            margin: -25px;
+            background-color: rgba($color-tertiary, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            & > i{
+                color: white;
+                animation: rolling .8s;
+            }
+        }
     }
+    
+
 }
+
+
 
 .price--align{
     margin-top: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 @keyframes unfold {
@@ -70,5 +84,7 @@
 }
 
 @keyframes rolling{
-
+    to{
+        transform: rotateZ(360deg);
+    }
 }

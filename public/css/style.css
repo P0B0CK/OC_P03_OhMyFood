@@ -503,6 +503,7 @@ p.place-restaurant {
 
 .plate {
   display: flex;
+  justify-content: space-between;
   height: 150px;
   padding: 25px;
   margin-bottom: 50px;
@@ -517,27 +518,34 @@ p.place-restaurant {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-
-.plate__txt {
+.plate .plate-details .plate__txt {
   width: auto;
   overflow: hidden;
 }
-
-.plate__price {
+.plate .plate-details .plate__price {
   width: 20%;
 }
-
-.plate__valid {
-  width: 0%;
+.plate .plate__valid i {
+  color: transparent;
+}
+.plate:hover .plate__valid {
+  visibility: visible;
+  width: 25%;
+  border-radius: 0 60px 60px 0;
+  margin: -25px;
   background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.plate__valid:hover {
-  width: 20%;
+.plate:hover .plate__valid > i {
+  color: white;
+  animation: rolling 0.8s;
 }
 
 .price--align {
   margin-top: 80px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 @keyframes unfold {
@@ -552,7 +560,11 @@ p.place-restaurant {
     transform: translateX(0px);
   }
 }
-@keyframes rolling {}
+@keyframes rolling {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 .heart-container {
   position: relative;
   cursor: pointer;
