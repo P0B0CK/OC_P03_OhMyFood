@@ -32,11 +32,16 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         .plate__txt{
-             width: auto;
-        overflow: hidden;
+            width: auto;
+            overflow: hidden;
         }
         .plate__price{
-            width: 20%;
+            width: 10%;
+            position: relative;
+            p{
+                position: absolute;
+                bottom: 0; right: 0;
+            }
         }
     }
     .plate__valid i{
@@ -46,7 +51,7 @@
         .plate__valid{
             width: 20%;
             border-radius: 0 60px 60px 0;
-            margin: -25px;
+            margin: -25px -25px -25px 20px;
             background-color: rgba($color-tertiary, 1);
             display: flex;
             justify-content: center;
