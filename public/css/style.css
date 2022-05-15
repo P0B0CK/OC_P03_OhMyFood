@@ -521,7 +521,7 @@ p.place-restaurant {
   overflow: hidden;
 }
 .plate .plate-details .plate__txt {
-  max-width: 85%;
+  max-width: 88%;
   padding: 5px;
 }
 .plate .plate-details .plate__txt p {
@@ -529,13 +529,14 @@ p.place-restaurant {
   text-overflow: ellipsis;
 }
 .plate .plate-details .plate__price {
-  width: 10%;
+  width: 20%;
+  padding-left: 25px;
   position: relative;
 }
 .plate .plate-details .plate__price p {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -9px;
 }
 .plate .plate__valid i {
   color: transparent;
