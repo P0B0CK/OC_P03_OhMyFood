@@ -193,9 +193,21 @@ body {
     transform: translate(24px, 0);
   }
 }
-#reserve {
-  padding: 100px 130px 100px;
-  background-color: #F6F6F6;
+@media only screen and (min-width: 600px) {
+  #reserve {
+    padding: 100px 130px 100px;
+    background-color: #F6F6F6;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #reserve {
+    background-color: red;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #reserve {
+    background-color: blue;
+  }
 }
 
 .box--offset {

@@ -1,6 +1,16 @@
 #reserve{
-    padding: 100px 130px 100px;
-    background-color: #F6F6F6; 
+    @include mobile-1st{
+        padding: 100px 130px 100px;
+        background-color: #F6F6F6;
+    }
+
+    @include to-tablet{
+        background-color: red;
+    }
+
+    @include to-desktop{
+        background-color: blue;
+    }
 }
 
 .box--offset{
@@ -40,11 +50,9 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-
     p{
         color: $color-blackened;
     }
-
     button p{
         color: $color-white;
     }
@@ -61,6 +69,7 @@ section.command{
     display: flex;
     align-items: center;
     justify-content: center;
+        
     button{
         padding: 30px 100px;
         margin: -75px 0 150px 0;
