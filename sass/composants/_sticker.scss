@@ -7,13 +7,9 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        //height: 200px;
         padding: 25px;
-        //margin-bottom: 100px;
         margin-bottom: 20px;
-        //border-radius: 60px;
         border-radius: 15px;
-        //box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.3);
         box-shadow: 1px 5px 15px 0px rgb($color-blackened, 0.3);
         font-size: 16px;
     }
@@ -34,36 +30,26 @@
     }
 
     .sticker--circle {
-        //width: 80px;
-        //height: 80px;padding: 4px;
         padding: 4px;
         margin-right: 15px;
         margin-left: -36px;
         position: relative;
         width: 1.2em;
-        //left: -40px;
         background-color: $color-primary;
-        //border-radius: 50px;
         border-radius: 100%;
         display: flex;
 
         .sticker--nbr {
             position: relative;
-            //top: 20px;
-            //left: 27px;
             color: $color-white;
-            //margin: 0;
             margin: auto;
         }
     }
 
     .sticker__icon {
-        //width: 40px;
-        //height: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        //        margin: 0 50px 0 20px;
         margin: 0 16px 0 0px;
         color: $color-primary;
 
@@ -80,7 +66,7 @@
 
         .text--sizing {
             margin: 0;
-            //font-weight: bold;
+            font-weight: bold;
             text-align: center;
         }
     }

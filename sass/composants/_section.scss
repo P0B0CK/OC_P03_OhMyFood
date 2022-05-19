@@ -1,9 +1,6 @@
 #reserve{
-    //@include mobile-1st{
-        //padding: 100px 130px 100px;
         padding: 50px 40px;
         background-color: #F6F6F6;
-    //}
 
     @include to-tablet{
         background-color: red;

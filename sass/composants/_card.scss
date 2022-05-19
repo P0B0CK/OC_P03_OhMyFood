@@ -26,24 +26,15 @@
 }
 
 .new {
-    //width: 230px;
-    //height: 75px;
     padding: 8px 20px;
     border-radius: 3px;
-    //border-radius: 8px;
     background-color: $color-tertiary;
     position: absolute;
-    //top: 30px; right: 30px;
-    right: 15px;
-    top: 15px;
-/*
-    p.new--font {
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-        color: #008d62;
-        //margin: 15px 0 0 0;
-    }*/
+    right: 15px; top: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #008d62;
 }
 
 .card__pic {
@@ -74,16 +65,13 @@
 }
 
 .card__text {
-    //  height: 200px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    //line-height: 60px;
 
     .text--column {
         width: 90%;
-        //padding: 30px;
-        padding: 20px;
+        padding: 15px;
 
         h4 {
             margin: 0;
