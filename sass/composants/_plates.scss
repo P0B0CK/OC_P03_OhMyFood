@@ -35,16 +35,16 @@
         overflow: hidden;
 
         .plate__txt{
-            max-width: 88%;
-            padding: 5px;
-            p{
+            max-width: 85%;
+            padding:  5px;
+            p, h4{
                 overflow: hidden;
                 text-overflow: ellipsis;
             } 
         }
         .plate__price{
             width: 20%;
-            //padding-left: 25px;
+            margin-left: 10px;
             position: relative;
             p{
                 font-weight: 700;
