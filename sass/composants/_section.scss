@@ -12,18 +12,13 @@
 }
 
 .box--offset{
-    //padding: $padding50;
-    padding: 50px 20px 30px 20px;
+    padding: 25px;
     background-color: $color-white;
-    h2{
-        //padding-top: $padding50;
-        //padding-bottom: $padding50;
-    }
 }
 
 .box--rounded{
-    border-top-left-radius: 125px;
-    border-top-right-radius: 125px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
 }
 
 .box--color{
@@ -31,7 +26,7 @@
 }
 
 .box--position{
-    transform: translate(0, -155px);
+    transform: translate(0, -50px);
 }
 
 .fonctionnement{
@@ -61,16 +56,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 0 0;
 }
 
 section.command{
     display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
         
     button{
         padding: 30px 100px;
-        margin: -75px 0 150px 0;
+        margin: 0 0 75px;
     }
 }

@@ -14,7 +14,8 @@ body {
 h1 {
   font-family: "Shrikhand", cursive, Impact, Arial, Helvetica, Verdana;
   color: black;
-  font-size: 68px;
+  font-size: 28px;
+  margin: 0;
 }
 
 h2 {
@@ -23,28 +24,27 @@ h2 {
   margin: 0;
 }
 
-h4 {
+h3 {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 400;
+  color: #353535;
+  margin: 15px 0;
+}
+
+.menu--under {
+  width: 11%;
+  line-height: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+h4 {
+  margin: 0 0 8px 0;
 }
 
 p {
   font-size: 16px;
   color: #353535;
-}
-
-.fonts--margin {
-  margin: 15px 0;
-}
-
-.fonts--size {
-  font-size: 45px;
-}
-
-.fonts--weight {
-  font-weight: 400;
-  color: #353535;
-  margin: 12px 0;
+  margin: 0;
 }
 
 .fonts--bold {
@@ -56,18 +56,6 @@ p {
 a {
   text-decoration: none;
   color: #353535;
-}
-
-.menu--fonts {
-  font-size: 45px;
-  font-weight: 400;
-  color: #353535;
-}
-
-.menu--under {
-  width: 13%;
-  line-height: 100px;
-  border-bottom: 8px solid #99E2D0;
 }
 
 .loader-typo {
@@ -212,12 +200,13 @@ body {
 }
 
 .box--offset {
-  padding: 50px 20px 30px 20px;
+  padding: 25px;
   background-color: #ffffff;
 }
+
 .box--rounded {
-  border-top-left-radius: 125px;
-  border-top-right-radius: 125px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
 }
 
 .box--color {
@@ -225,7 +214,7 @@ body {
 }
 
 .box--position {
-  transform: translate(0, -155px);
+  transform: translate(0, -50px);
 }
 
 .fonctionnement {
@@ -255,17 +244,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px 0 0;
 }
 
 section.command {
   display: flex;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
 }
 section.command button {
   padding: 30px 100px;
-  margin: -75px 0 150px 0;
+  margin: 0 0 75px;
 }
 
 input {
@@ -505,12 +494,12 @@ p.place-restaurant {
 .plate {
   display: flex;
   justify-content: space-between;
-  height: 150px;
-  padding: 25px;
-  margin-bottom: 50px;
-  border-radius: 60px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 15px;
   background-color: white;
-  box-shadow: 0 5px 25px 0 rgba(53, 53, 53, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(53, 53, 53, 0.2);
   cursor: pointer;
 }
 .plate .plate-details {
@@ -531,21 +520,21 @@ p.place-restaurant {
 }
 .plate .plate-details .plate__price {
   width: 20%;
-  padding-left: 25px;
   position: relative;
 }
 .plate .plate-details .plate__price p {
+  font-weight: 700;
   position: absolute;
   bottom: 0;
-  right: -9px;
+  right: 0;
 }
 .plate .plate__valid i {
   color: transparent;
 }
 .plate:hover .plate__valid {
-  width: 20%;
-  border-radius: 0 60px 60px 0;
-  margin: -25px -25px -25px 20px;
+  width: 2%;
+  border-radius: 0 15px 15px 0;
+  margin: -10px -10px -10px 15px;
   background-color: #99e2d0;
   display: flex;
   justify-content: center;
@@ -631,7 +620,7 @@ footer {
   background-color: #353535;
 }
 footer h3 {
-  font-size: 56px;
+  font-size: 22px;
 }
 footer ul {
   padding: 0;
