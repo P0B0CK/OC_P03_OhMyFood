@@ -1,8 +1,9 @@
 #reserve{
-    @include mobile-1st{
-        padding: 100px 130px 100px;
+    //@include mobile-1st{
+        //padding: 100px 130px 100px;
+        padding: 50px 40px;
         background-color: #F6F6F6;
-    }
+    //}
 
     @include to-tablet{
         background-color: red;
@@ -14,11 +15,12 @@
 }
 
 .box--offset{
-    padding: $padding50;
+    //padding: $padding50;
+    padding: 50px 20px 30px 20px;
     background-color: $color-white;
     h2{
-        padding-top: $padding50;
-        padding-bottom: $padding50;
+        //padding-top: $padding50;
+        //padding-bottom: $padding50;
     }
 }
 
