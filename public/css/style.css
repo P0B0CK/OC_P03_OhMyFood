@@ -190,16 +190,23 @@ body {
 }
 #reserve {
   padding: 50px 40px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 @media only screen and (min-width: 768px) {
   #reserve {
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
   }
 }
 @media only screen and (min-width: 992px) {
   #reserve {
-    background-color: blue;
+    width: 40%;
+    margin: 0 auto 25px auto;
+    justify-content: center;
+    border-radius: 45px;
+    box-shadow: 1px 5px 15px 0px rgba(53, 53, 53, 0.3);
   }
 }
 
@@ -221,9 +228,22 @@ body {
   transform: translate(0, -50px);
 }
 
+@media only screen and (min-width: 992px) {
+  #foncton {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .fonctionnement {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
 }
 
 #restaurants {
@@ -328,7 +348,7 @@ button:hover::after {
 }
 
 button:hover {
-  transform: translate(0, -10px);
+  transform: translate(0, -3px);
   box-shadow: 20px 20px 45px 0 rgba(53, 53, 53, 0.5);
 }
 
@@ -336,6 +356,13 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .pannel {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
 }
 .pannel .sticker {
   display: flex;

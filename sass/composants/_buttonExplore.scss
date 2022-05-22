@@ -35,6 +35,6 @@ button:hover::after{
 }
 
 button:hover{
-    transform: translate(0, -10px);
+    transform: translate(0, -3px);
     box-shadow: 20px 20px 45px 0 rgba($color-blackened, .5);
 }

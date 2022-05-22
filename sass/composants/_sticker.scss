@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     padding: 0px;
+    @include to-tablet{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
 
     .sticker {
         display: flex;
