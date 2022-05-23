@@ -3,12 +3,12 @@
     display: flex;
     flex-flow: column nowrap;
     margin-top: 25px;
-    @include to-tablet{
+    @include tablet{
         flex-flow: row wrap;
         justify-content: space-around;
     }
     a{
-        @include to-tablet{
+        @include tablet{
             width: 45%;
         }
     }
@@ -91,6 +91,17 @@ p.place-restaurant {
     color: rgb($color-blackened, 0.8);
 }
 
-.photo__profil {
-    width: 100%;
+.profil {
+    .photo__profil{
+        width:100%;
+    }
+
+    @include tablet{
+        height: 400px;
+        .photo__profil img{
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
 }

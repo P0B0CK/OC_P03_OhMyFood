@@ -517,8 +517,18 @@ p.place-restaurant {
   color: rgba(53, 53, 53, 0.8);
 }
 
-.photo__profil {
+.profil .photo__profil {
   width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .profil {
+    height: 400px;
+  }
+  .profil .photo__profil img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .menu-pannel {
@@ -537,6 +547,12 @@ p.place-restaurant {
 }
 .menu-pannel :nth-child(4) {
   animation: unfold 3s 1.9s forwards;
+}
+@media only screen and (min-width: 768px) {
+  .menu-pannel {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }
 
 .plate {
@@ -594,6 +610,11 @@ p.place-restaurant {
 .plate:hover .plate__valid > i {
   color: white;
   animation: rolling 0.8s;
+}
+@media only screen and (min-width: 768px) {
+  .plate {
+    width: 30%;
+  }
 }
 
 .price--align {

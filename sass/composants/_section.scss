@@ -2,14 +2,14 @@
         padding: 50px 40px;
         background-color: $color-whitened;
 
-    @include to-tablet{
+    @include tablet{
         justify-content: center;
         align-items: center;
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;
     }
 
-    @include to-desktop{
+    @include desktop{
         width: 40%;
         margin: 0 auto 25px auto;
         justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 #foncton{
-    @include to-desktop{
+    @include desktop{
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;
     }
@@ -49,7 +49,7 @@
 
 
 
-    @include to-desktop{
+    @include desktop{
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;
     }

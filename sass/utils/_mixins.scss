@@ -4,13 +4,13 @@
     }
 }
 
-@mixin to-tablet {
+@mixin tablet {
     @media only screen and (min-width: map-get($breakpoint, tablet)){
         @content;
     }
 }
 
-@mixin to-desktop {
+@mixin desktop {
     @media only screen and (min-width: map-get($breakpoint, desktop)){
         @content;
     }
