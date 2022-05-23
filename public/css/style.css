@@ -374,6 +374,12 @@ button:hover {
   box-shadow: 1px 5px 15px 0px rgba(53, 53, 53, 0.3);
   font-size: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .pannel .sticker {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .pannel .sticker--backGrey {
   background-color: #f6f6f6;
 }
@@ -428,6 +434,17 @@ button:hover {
   display: flex;
   flex-flow: column nowrap;
   margin-top: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .gal {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gal a {
+    width: 45%;
+  }
 }
 
 .picture {

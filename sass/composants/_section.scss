@@ -47,6 +47,8 @@
     display: flex;
     flex-direction: column;
 
+
+
     @include to-desktop{
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;

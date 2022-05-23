@@ -3,6 +3,15 @@
     display: flex;
     flex-flow: column nowrap;
     margin-top: 25px;
+    @include to-tablet{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    a{
+        @include to-tablet{
+            width: 45%;
+        }
+    }
 }
 
 .picture {
@@ -11,13 +20,9 @@
 
 .card {
     width: 100%;
-    //height: 600px;
-    //border-radius: $border45;
-    //border-radius: 20px 20px 0 0;
     border-radius: 20px;
     background-color: $color-white;
     box-shadow: 0 10px 50px 0 rgb($color-blackened, 0.2);
-    //margin-bottom: 50px;
     margin-bottom: 20px;
 
     &:hover {
@@ -38,13 +43,11 @@
 }
 
 .card__pic {
-    //height: 400px;
     position: relative;
     border-radius: 20px 20px 0 0;
 
     .picture {
         width: 100%;
-        //height: 400px;
         height: 180px;
         object-fit: cover;
         object-position: bottom;
@@ -52,13 +55,11 @@
 
     .picture--center {
         width: 100%;
-        //height: 400px;
         object-fit: cover;
         object-position: center;
     }
 
     .picture--roundedTop {
-        //border-radius: $border45 $border45 0 0;
 
         border-radius: 20px 20px 0 0;
     }
@@ -80,14 +81,12 @@
 
     .icn-favorite {
         width: 10%;
-        //padding: $padding50;
         padding: 20px;
         justify-content: center;
     }
 }
 
 p.place-restaurant {
-    //margin: 0;
     margin: 5px 0 0 0 ;
     color: rgb($color-blackened, 0.8);
 }
