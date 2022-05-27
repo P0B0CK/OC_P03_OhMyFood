@@ -745,15 +745,34 @@ footer {
   padding: 20px;
   background-color: #353535;
 }
+@media only screen and (min-width: 992px) {
+  footer .footer-links {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 footer h3 {
   font-size: 22px;
 }
 footer ul {
   padding: 0;
 }
+@media only screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
 footer li {
   list-style-type: none;
   padding-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  footer li {
+    margin-right: 25px;
+  }
 }
 footer a {
   text-decoration: none;
@@ -761,7 +780,7 @@ footer a {
   color: white;
 }
 footer a i {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 footer a:hover {
   color: #9356DC;
