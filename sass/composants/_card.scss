@@ -94,14 +94,20 @@ p.place-restaurant {
 .profil {
     .photo__profil{
         width:100%;
+        object-fit: cover;
     }
 
     @include tablet{
         height: 400px;
-        .photo__profil img{
-            height: 400px;
-            object-fit: cover;
-            object-position: center;
+        .photo__profil{
+            height: 330px;
+        }
+    }
+
+    @include desktop{
+        height: 400px;
+        .photo__profil{
+            height: 330px;
         }
     }
 }
