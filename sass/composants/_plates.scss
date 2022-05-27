@@ -18,6 +18,10 @@
         flex-flow: row wrap;
         justify-content: space-between;
     }
+    @include desktop{
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
 }
 
 .plate{
@@ -80,6 +84,9 @@
     }
     @include tablet{
         width: 30%;
+    }
+    @include desktop{
+        width: 92%;
     }
 
 }

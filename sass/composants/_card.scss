@@ -50,7 +50,6 @@
         width: 100%;
         height: 180px;
         object-fit: cover;
-        object-position: bottom;
     }
 
     .picture--center {
@@ -94,9 +93,10 @@ p.place-restaurant {
 .profil {
     .photo__profil{
         width:100%;
+        height: 215px;
         object-fit: cover;
     }
-
+/*
     @include tablet{
         height: 400px;
         .photo__profil{
@@ -109,5 +109,5 @@ p.place-restaurant {
         .photo__profil{
             height: 330px;
         }
-    }
+    }*/
 }

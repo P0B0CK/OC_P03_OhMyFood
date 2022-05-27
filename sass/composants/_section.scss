@@ -33,12 +33,12 @@
 }
 
 .box--position{
-    transform: translate(0, -50px);
+    transform: translate(0, 0);
     @include tablet {
-        transform: translate(0, -20px);
+        transform: translate(0, 0);
     }
     @include desktop {
-        transform: translate(0, -100px);
+        transform: translate(0, 0);
     }
 }
 
@@ -53,9 +53,8 @@
     display: flex;
     flex-direction: column;
 
-
-
     @include desktop{
+        @include maxview;
         border-top-left-radius: 45px;
         border-top-right-radius: 45px;
     }
@@ -63,6 +62,12 @@
 
 #restaurants{
     background-color: $color-whitened;
+}
+
+.restaurants__list{
+    @include desktop{
+        @include maxview
+    }
 }
 
 .reservation{
@@ -83,6 +88,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include desktop{
+        @include maxview
+    }
+}
+
+.menu{
+    @include desktop{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        @include maxview;
+    }
 }
 
 section.command{

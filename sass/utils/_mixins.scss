@@ -9,3 +9,11 @@
         @content;
     }
 }
+
+// Taille maximale du viewport en desktop
+
+@mixin maxview{
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+}
