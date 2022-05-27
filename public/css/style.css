@@ -608,6 +608,21 @@ p.place-restaurant {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .menu {
+    display: flex;
+  }
+  .menu .firstPlate {
+    width: 30%;
+  }
+  .menu .secondPlate {
+    width: 30%;
+  }
+  .menu .thirdPlate {
+    width: 30%;
+  }
+}
+
 .plate {
   display: flex;
   justify-content: space-between;
@@ -671,7 +686,7 @@ p.place-restaurant {
 }
 @media only screen and (min-width: 992px) {
   .plate {
-    width: 92%;
+    width: 100%;
   }
 }
 

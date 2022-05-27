@@ -24,6 +24,21 @@
     }
 }
 
+.menu{
+    @include desktop{
+        display: flex;
+        .firstPlate{
+            width: 30%
+        }
+        .secondPlate{
+            width: 30%
+        }
+        .thirdPlate{
+            width: 30%
+        }
+    }
+}
+
 .plate{
     display: flex;
     justify-content: space-between;
@@ -86,7 +101,7 @@
         width: 30%;
     }
     @include desktop{
-        width: 92%;
+        width: 100%;
     }
 
 }
